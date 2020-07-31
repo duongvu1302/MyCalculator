@@ -1,0 +1,101 @@
+?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    //tạo 1 Layout để sắp xếp các EditText đầu vào
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        //tạo EditText1 để nhập số thứ nhất
+        <EditText
+            android:id="@+id/edt1"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+        //tạo EditText2 để nhập số thứ 2
+        <EditText
+            android:id="@+id/edt2"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+    //tạo 1 Layout để sắp xếp các Button toán tử
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        //Button addition
+        <Button
+            android:id="@+id/btn_add"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        //Button subtraction
+        <Button
+            android:id="@+id/btn_sub"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        //Button multiplication
+        <Button
+            android:id="@+id/btn_mul"
+            android:text="*"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        //Button division
+        <Button
+            android:id="@+id/btn_div"
+            android:text="/"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    //Tạo TextView hiển thị kết quả
+    <TextView
+        android:id="@+id/tv_result"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
